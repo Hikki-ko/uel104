@@ -1,0 +1,434 @@
+/*IMPORTATION DES POLICES ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tourney:ital,wdth,wght@0,106.8,100..900;1,106.8,100..900&display=swap');
+
+
+:root {
+  --primary-red: #e30119;
+  --brown-text: #543224;
+  --primary-font: "Poppins", sans-serif;
+  --header-font: "Montserrat", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  min-height: 100vh;
+  padding: 2em;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 1em;
+}
+
+h1{
+  color: var(--primary-red);
+  font-family: "Tourney", sans-serif;
+  font-size: 2rem;
+  letter-spacing: .1em;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+}
+
+.introduction{
+  text-align: center;
+  background-color: var(--primary-red);
+  padding: 1rem;
+  border-radius: 15px;
+  border: #181818 1px solid;
+  box-shadow: #181818 1px 1px 1px 1px;
+}
+
+.texte_introduction{
+  font-size: 1rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.conclusion{
+  text-align: center;
+  background-color: var(--primary-red);
+  padding: 1rem;
+  border-radius: 15px;
+  border: #181818 1px solid;
+  box-shadow: #181818 1px 1px 1px 1px;
+  grid-column: 1 / -1; /* Span across all columns */
+  grid-row: auto; /* Position in the third row */
+}
+
+.texte_conclusion{
+  font-size: 1rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactez-nous{
+  color: var(--brown-text);
+  font-family: var(--primary-font);
+}
+
+/*MISE EN FORME DES ARTICLES ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧ */
+
+/* Mise en forme de la page "Présentation de l'entreprise" */
+
+.container_entreprise {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  max-width: 100%
+}
+
+.right_side_entreprise{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: flex-end;
+  padding: 1em;
+  gap: 1em;
+}
+
+.left_side_entreprise {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: flex-start;
+  padding: 1em;
+  gap: 1em;
+}
+
+.section_responsabilite:hover,
+.section_entreprise:hover
+{
+  scale: 95%;
+  transition: 1s;
+}
+
+.liste_ecologie{
+  margin: 1em;
+  justify-self: center;
+}
+.liste_ecolo_deco{
+  text-decoration: overline #51A6AE;
+}
+
+.illustration{
+  align-self: center;
+}
+/* Mise en forme de la page "Une opportunité" */
+
+.opportunite_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  max-width: 100%
+}
+
+.left_side_opportunite {
+  display: flex ;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: flex-start;
+  padding: 1em;
+  gap: 1em;
+}
+
+
+.right_side_opportunite {
+  display: flex;
+   flex-direction: column;
+  align-items: flex-end;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1em;
+  gap: 1em;
+}
+
+.section_youtube {
+  align-self: center;
+}
+
+.section_diversite:hover,
+.section_engagement:hover,
+.section_collab:hover
+{
+  scale: 95%;
+  transition: 1s;
+}
+
+.citation:hover{
+  rotate: 2deg;
+}
+/* Mise en forme de la page "Actualités" */
+
+.container_actualites{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 100%
+}
+
+.first_row_actualites{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 1em;
+  gap: 1em;
+}
+
+.second_row_actualites{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 1em;
+  gap: 1em;
+}
+
+.section_classement:hover,
+.section_fibre:hover,
+.moins_vingt_euros:hover,
+.section_vacances:hover{
+  scale: 95%;
+  transition: 1s;
+}
+
+/* Mise en forme générale des articles */
+
+.articles{
+  font-family: var(--primary-font);
+  color: var(--brown-text);
+  font-size: 1rem;
+  max-width: 100%;
+  margin: 1em;
+  text-justify: inter-word;
+}
+
+.une_entreprise_plurielle,
+.responsabilite_societale,
+.engagement,
+.diversite,
+.innovation_collaboration,
+.arcep,
+.moins_vingt_euros,
+.fibre,
+.vacances
+{
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 1rem;
+  border: #181818 1px solid;
+  box-shadow: #181818 1px 1px 1px 1px;
+}
+
+.titre_de_section{
+  color: var(--primary-red);
+  font-family: var(--header-font);
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(130,56,35,0);
+}
+
+.citation{
+  padding: 1rem;
+  border-radius: 10px;
+  border: #181818 1px dashed;
+  background-color: #B60114;
+  margin: 1rem;
+}
+
+#texte_citation{
+  color: #ffffff;
+  text-align: center;
+}
+
+#lien_citation{
+  color: #01E3CB;
+}
+
+#lien_citation:hover{
+  color: yellow;
+  text-decoration: none;
+}
+
+/* MISE EN FORME DES LIENS ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧ */
+
+.lien-externe {
+  color: var(--primary-red); /* Les liens externes seront rouges */
+  text-decoration: none; /* Enlève la décoration par défaut */
+}
+
+.lien-externe:hover {
+  text-decoration: underline; /* Ajoute du style pour les liens externes lors du survol */
+}
+
+
+/* MISE EN FORME DU MENU DE NAVIGATION
+CRÉATION D'UN MENU DÉROULANT 
+ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧ */
+
+nav {
+  display: flex; /* Utilise le modèle de boîte flexible pour aligner les éléments enfants. */
+  justify-content: center; /* Centre les éléments horizontalement. */
+  background-color: #fff; 
+}
+
+nav ul {
+  display: flex; /* Aligne les éléments de la liste de manière "flexible". */
+  list-style-type: none; /* Supprime les puces de la liste. */
+}
+
+.menu-item {
+  padding: 1rem 2rem; /* Ajoute des espaces intérieurs autour des éléments du menu. */
+  color: #83818c;
+  position: relative; /* Permet de positionner les pseudo-éléments par rapport à cet élément. */
+}
+
+/* Style pour les textes "principaux" du menu de navigation */
+.menu-item > a {
+  text-decoration: none;
+  color: var(--primary-red);
+  font-family: var(--header-font);
+  font-size: 1.2rem;
+}
+
+/* Pseudo-éléments : Mots-clés ajoutés à un sélecteur qui permettent de styliser des parties spécifiques d'un élément sans avoir à modifier le HTML. */
+
+.menu-item:before {
+  content: ""; /* Crée un pseudo-élément vide avant chaque élément du menu. */
+  height: 3px; /* Définit la hauteur de ce pseudo-élément. */
+  position: absolute; /* Positionne le pseudo-élément par rapport à l'élément parent. */
+  background-color: var(--primary-red);
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Positionne le pseudo-élément en bas à gauche de l'élément parent et lui donne la même largeur. */
+  border-radius: 8px; /* Arrondit les coins du pseudo-élément. */
+  transform: scaleX(0); /* Réduit la largeur du pseudo-élément à zéro (masqué). */
+  transition: transform 0.3s ease; /* Ajoute une transition "smooth" pour la transformation. */
+}
+
+/* Agrandit la largeur du pseudo-élément à 100 % lorsque l'élément du menu est survolé, révélant ainsi une ligne sous l'élément du menu. */
+.menu-item:hover:before {
+  transform: scaleX(1);
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments du sous-menu en colonne. */
+  position: absolute; /* Positionne le sous-menu par rapport à l'élément parent. */
+  left: 0;
+  top: 35px;
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden; /* Rend le sous-menu invisible. */
+  transform: translateY(50px); /* Déplace le sous-menu de 50 pixels vers le bas. */
+  transition: all 0.5s ease;
+}
+
+/* Rend le sous-menu visible lorsque l'élément parent est survolé.
+Ajuste la position du sous-menu pour le placer juste en dessous de l'élément parent. */
+.menu-item:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  top: 60px;
+  transform: translateY(0px);
+}
+
+.submenu li {
+  padding: 10px;
+  transition: all 1s ease;
+}
+
+/* Mise en forme des liens du submenu */
+.submenu li > a {
+  text-decoration: none;
+  color: var(--brown-text);
+  font-family: var(--primary-font);
+}
+
+/* Change la couleur de fond lorsqu'un lien du sous-menu est survolé. */
+.submenu li > a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.submenu li:hover {
+  background-color: #c3c3c3;
+  border: #181818 1px solid;
+  cursor: pointer; /* Change le curseur en une main pointée, indiquant que l'élément est cliquable. */
+}
+
+/* MISE EN FORME DU TABLEAU ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧ */
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #181818;
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 50%;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: var(--primary-red);
+  font-family: var(--header-font);
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+
+
